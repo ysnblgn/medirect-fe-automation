@@ -22,6 +22,7 @@ test.describe('Equities Search Page', () => {
     await searchPage.openMoreInformation();
     await expect(detailsPage.restrictionMessage).toBeVisible();
     await expect(detailsPage.blurredChart).toBeVisible();
+    await expect(detailsPage.lockedIcons.first()).toBeVisible();
     const lockCount = await detailsPage.lockedIcons.count();
     expect(lockCount).toBeGreaterThan(0);
   });
