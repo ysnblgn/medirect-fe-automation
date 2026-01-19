@@ -67,28 +67,28 @@ This section reflects the **actual folder structure and naming** used in this re
 
 ### Prerequisites
 
-- Node.js 24.13.0
-- npm
+- Node.js: latest 20.x, 22.x or 24.x.
+
 
 ### Installation
 
 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ysnblgn/medirect-fe-automation
 cd <repo-folder>
 ```
 
 2. Install dependencies
 
-```bash
-npm install
+```
+https://nodejs.org/en/download
 ```
 
 3. Install Playwright browsers
 
 ```bash
-npx playwright install
+npm init playwright@latest
 ```
 
 ---
@@ -104,7 +104,7 @@ npx playwright test
 ### Run a specific spec file
 
 ```bash
-npx playwright test tests/specs/equities-search.spec.ts
+npx playwright test tests/{specfile_name.ts}
 ```
 
 ### Run in headed mode
